@@ -1,9 +1,3 @@
-#include <node.h>
-#include <node_buffer.h>
-#include <v8.h>
-#include <stdint.h>
-#include <nan.h>
-
 #include "blake2.h"  
 #include "portable_endian.h"    // for htole32/64
 #include "int-util.h"
