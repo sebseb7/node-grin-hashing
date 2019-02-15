@@ -13,7 +13,7 @@ function unscaled_diff(bits,pow,scale = 1)
 
 	var hashcopy = Buffer.from(hash);
 	var hashNum = bignum.fromBuffer(hashcopy.reverse());
-	return bignum(1).shiftLeft(256).sub(scale).div(hashNum).toNumber();
+	return bignum(1).shiftLeft(256).sub(1).mul(scale).div(hashNum).toNumber();
 }
 				
 function cuckoo(header,pow,bits) {
