@@ -2,11 +2,9 @@
 const bignum = require('bignum');
 const cu = require('bindings')('grin-hashing.node');
 
-function scaled_diff(bits,pow,scale)
+function scaled_diff(bits,pow,ar_scale)
 {
-	if (bits == 31) scale = 7936;
-
-	return unscaled_diff(bits,pow,scale);
+	return unscaled_diff(bits, pow, (bits == 31) ? 7936 : ar_scale);
 }
 
 function unscaled_diff(bits,pow,scale = 1)
