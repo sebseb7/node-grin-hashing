@@ -1,0 +1,19 @@
+{
+  "name": "grin-hashing",
+  "version": "1.0.0",
+  "description": "",
+  "license": "0BSD",
+  "authors": "sebseb7",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebseb7/node-grin-hashing.git"
+  },
+  "license": "ISC",
+  "gypfile": true,
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "dependencies": {
+    "bignum": "^0.13.0"
+  }
+}
